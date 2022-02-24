@@ -1,0 +1,671 @@
+{% extends 'base.html.twig' %} {% block title %}cleaning services {% endblock %} {% block body %}
+
+<!-- START SECTION BANNER -->
+<section class="banner_slider full_screen p-0">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active background_bg overlay_bg_60" data-img-src="{{ asset('assets/images/b1.jpg') }}">
+                <div class="banner_slide_content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="banner_content2 animation text_white" data-animation="fadeIn" data-animation-delay="0.3s" data-parallax='{"y": 30, "smoothness": 10}'>
+                                    <h2 class="font_style1 animation" data-animation="fadeInUp" data-animation-delay="0.5s"> {% trans %}ENTREPRISE DE PROPRETÉ, HYGIÈNE & MULTISERVICES {% endtrans %}</h2>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.6s"> {% trans %} Entreprise de nettoyage intervenant sur Laval et sur toute l’IDF, alliant valeurs familiales et stabilité d’une PME de plus de 500 collaborateurs {% endtrans %}
+                                    </p>
+                                    {#                                     
+                                    <a class="btn btn-default btn-radius animation" href="{{ path('blog') }}" data-animation="fadeInUp" data-animation-delay="0.7s"> {% trans %}Apprendre Plus {% endtrans %}</a>
+                                     #}
+                                    <a class="btn btn-outline-light btn-radius animation" href="{{ path('contact') }}" data-animation="fadeInUp" data-animation-delay="0.8s"> {% trans %} Contactez Nous {% endtrans %} </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item background_bg overlay_bg_60" data-img-src="{{ asset('assets/images/b2.jpg') }}">
+                <div class="banner_slide_content">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-6">
+                                <div class="banner_content2 animation text_white" data-animation="fadeIn" data-animation-delay="0.4s">
+                                    <h2 class="font_style1 animation" data-animation="fadeInDown" data-animation-delay="0.5s"> {% trans %} Du nettoyage de bureaux à l’entretien d’immeuble, en passant par le nettoyage industriel. {% endtrans %} </h2>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.6s">{% trans %} Le nettoyage d’un bâtiment industriel est un métier spécifique qui nécessite une certaine maîtrise de l’univers industriel afin de comprendre ses contraintes et ses objectifs. {% endtrans %} </p>
+                                    {#                                     
+                                    <a class="btn btn-default btn-radius animation" href="{{ path('blog') }}" data-animation="fadeInUp" data-animation-delay="0.7s"> {% trans %} Apprendre Plus {% endtrans %}</a>
+                                     #}
+                                    <a class="btn btn-outline-light btn-radius animation" href="{{ path('contact') }}" data-animation="fadeInUp" data-animation-delay="0.8s"> {% trans %} Contactez Nous {% endtrans %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item background_bg overlay_bg_60" data-img-src="{{ asset('assets/images/b3.jpg') }}">
+                <div class="banner_slide_content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">
+                                <div class="banner_content2 animation text-center text_white" data-animation="fadeIn" data-animation-delay="0.4s" data-parallax='{"y": 30, "smoothness": 10}'>
+                                    <h2 class="font_style1 animation" data-animation="fadeInDown" data-animation-delay="0.5s"> {% trans %} Votre bien être est notre priorité {% endtrans %} </h2>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.6s"> {% trans %}  pour chaque projet de nettoyage industriel ou chaque réponse à un appel d’offre de nettoyage industriel, l’agent de nettoyage qui sera le plus apte à optimiser son temps et le nettoyage du secteur qui lui est réservé. {% endtrans %}</p>
+                                    
+                                    {# <a class="btn btn-default btn-radius animation" href="{{ path('blog') }}" data-animation="fadeInUp" data-animation-delay="0.7s">{% trans %}Apprendre Plus {% endtrans %} </a>
+                                     #}
+                                    <a class="btn btn-outline-light btn-radius animation" href="{{ path('contact') }}" data-animation="fadeInUp" data-animation-delay="0.8s">{% trans %}Contactez Nous {% endtrans %} </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel_nav carousel_style2">
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"><i class="ion-chevron-left"></i></a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"><i class="ion-chevron-right"></i></a>
+        </div>
+    </div>
+</section>
+<!-- END SECTION BANNER -->
+
+<!-- START SECTION ABOUT US -->
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <div class="bg-white box_shadow4 small_padding animation" data-animation="fadeInRight" data-animation-delay="0.2s">
+                    <div class="heading_s3">
+                        <h3>{% trans %} Clean services pense à une planète plus propre et pratique un nettoyage industriel écologique ! {% endtrans %}</h3>
+                        <div class="title_icon"><i class="flaticon-lotus"></i></div>
+                    </div>
+                    <p> {% trans %} Clean services possède une expérience désormais reconnue dans le domaine du nettoyage industriel et dépêche des agents de nettoyage industriel dans bon nombre de petites, moyennes et grandes industries de LAval {% endtrans %}
+
+                    </p>
+
+                    {# <a href="{{ path('blog') }}" class="btn btn-default btn-radius">{% trans %}En savoir plus {% endtrans %}</a>
+                 #}
+                </div>
+            </div>
+            
+
+
+           
+
+        </div>
+    </div>
+</section>
+<!-- END SECTION ABOUT US -->
+
+<!-- START SECTION BENIFIT -->
+<section class="pb_70 bg_gray">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10 text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s3 text-center">
+                    <h3> {% trans %}Nos prestations {% endtrans %}</h3>
+                    <div class="title_icon"><i class="flaticon-lotus"></i></div>
+                </div>
+                <p> {% trans %}Entreprise de nettoyage intervenant sur Laval, alliant valeurs familiales et stabilité d’une PME de plus de 500 collaborateurs, Clean services a su évoluer au gré des demandes de ses clients afin que le maître-mot qui la caractérise reste « satisfaction ». {% endtrans %}</p>
+                <div class="small_divider clearfix"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="icon_box icon_box_style3 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <div class="box_icon">
+                        <i class="flaticon-strong-body"></i>
+                    </div>
+                    <div class="intro_desc">
+                        <h5>{% trans %}NETTOYAGE DE BUREAUX {% endtrans %}</h5>
+                        <p>{% trans %}Travailler dans un univers propre permet d’apporter une sérénité à la vie de l’entreprise. Nous passons une grande partie de notre temps au bureau avec nos collègues qui ont chacun leurs règles d’hygiène respectives.
+
+Pour faire en sorte que vos collaborateurs continuent d’évoluer dans un univers où le travail est la principale préoccupation, Armor Nettoyage s’engage  à apporter tout son savoir-faire en matière de nettoyage de bureaux, et ce, dans le but de donner à vos bureaux la propreté qu’ils méritent.. {% endtrans %} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="icon_box icon_box_style3 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                    <div class="box_icon">
+                        <i class="flaticon-flexibility"></i>
+                    </div>
+                    <div class="intro_desc">
+                        <h5>{% trans %}NETTOYAGE INDUSTRIEL {% endtrans %}</h5>
+                        <p>{% trans %}Le nettoyage d’un bâtiment industriel est un métier spécifique qui nécessite une certaine maîtrise de l’univers industriel afin de comprendre ses contraintes, ses obligations et ses objectifs. Chez clean services, un agent de nettoyage industriel est formé à cette spécificité dans le but d’être le plus efficace possible sur le terrain.{% endtrans %} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="icon_box icon_box_style3 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                    <div class="box_icon">
+                        <i class="flaticon-healthy-lifestyle"></i>
+                    </div>
+                    <div class="intro_desc">
+                        <h5>{% trans %}ENTRETIEN D’IMMEUBLE D’HABITATION{% endtrans %}</h5>
+                        <p> {% trans %}Clean services ne gère pas uniquement les travaux d’entretien des immeubles de bureaux, mais opère également pour les propriétaires d’immeubles d’habitation et bailleurs sociaux. L’entreprise s’assure ainsi du bien-être des colocataires de l’immeuble et de la pérennité de la structure. {% endtrans %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="icon_box icon_box_style3 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <div class="box_icon">
+                        <i class="flaticon-blood-flow"></i>
+                    </div>
+                    <div class="intro_desc">
+                        <h5> {% trans %} ENTRETIEN DES ESPACES VERTS {% endtrans %}</h5>
+                        <p>{% trans %}L’entretien des espaces verts d’un immeuble est un poste à ne pas négliger, quelle que soit la saison. La bonne gestion des espaces verts d’un immeuble assure une esthétique qualitative à votre bâtiment, notamment au travers d’une gestion durable des plantes et arbustes assurant leur bon développement. Des grandes vagues de chaleur de l’été à la rigueur du cœur de l’hiver, en passant par les précipitations, les tailles et les ramassages du printemps et de l’hiver, vos espaces verts ont un besoin constant d’assainissement.{% endtrans %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- END SECTION BENIFIT -->
+
+<!-- START SECTION CLASSES -->
+<section class="pb_70">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10 text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s3 text-center">
+                    <h3> {% trans %} PRODUITS DE NETTOYAGE ÉCOLOGIQUE {% endtrans %}</h3>
+                    <div class="title_icon"><i class="flaticon-lotus"></i></div>
+                </div>
+                <p>{% trans %}Clean services repousse encore ses limites en utilisant un maximum de produits de nettoyage écologiques pour le bien de la planète mais également pour le bien-être de ses collaborateurs. {% endtrans %} </p>
+                <div class="small_divider clearfix"></div>
+            </div>
+        </div>
+        {# <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="classes_box classes_box_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <div class="classes_img">
+                        <img src="{{ asset('assets/images/classes_img1.jpg') }}" alt="image" />
+                        <div class="link_container">
+                            <a href=""><i class="ion-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="classes_info">
+                        <div class="classes_teacher">
+                            <img src="{{ asset('assets/images/cl_teacher_img1.jpg') }}" alt="image" />
+                            <span> {% trans %}LUMINOTHERAPIE {% endtrans %}</span>
+                        </div>
+                        <div class="classes_title">
+                            <span class="badge badge-pill badge-info">{% trans %}LUMINOTHERAPIE {% endtrans %}</span>
+                            <h4><a href="https://luminotherapie-formation.com/produit/logiciel-de-chromo-luminotherapie-musicale-quantique-l-e-m-q/"> {% trans %}Soins par la lumiere et le son {% endtrans %}</a></h4>
+                        </div>
+                        <ul class="classes_schedule">
+                            <li><i class="ion-calendar"></i> {% trans %}Calendrier personnalisé {% endtrans %}</li>
+                            <li><i class="ion-android-alarm-clock"></i> {% trans %}au coucher {% endtrans %} 11:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="classes_box classes_box_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                    <div class="classes_img">
+                        <img src="{{ asset('assets/images/classes_img2.jpg') }}" alt="image" />
+                        <div class="link_container">
+                            <a href="#"><i class="ion-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="classes_info">
+                        <div class="classes_teacher">
+                            <img src="{{ asset('assets/images/cl_teacher_img2.jpg') }}" alt="image" />
+                            <span>H.E.B</span>
+                        </div>
+                        <div class="classes_title">
+                            <span class="badge badge-pill badge-success">Harmonic Energy Balancer</span>
+                            <h4><a href="">{% trans %}Analyse le corps au niveau quantique {% endtrans %}</a></h4>
+                        </div>
+                        <ul class="classes_schedule">
+                            <li><i class="ion-calendar"></i> {% trans %}Vendredi {% endtrans %} </li>
+                            <li><i class="ion-android-alarm-clock"></i>{% trans %}Sur rendez-vous {% endtrans %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="classes_box classes_box_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                    <div class="classes_img">
+                        <img src="{{ asset('assets/images/classes_img3.jpg') }}" alt="image" />
+                        <div class="link_container">
+                            <a href="#"><i class="ion-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="classes_info">
+                        <div class="classes_teacher">
+                            <img src="{{ asset('assets/images/cl_teacher_img3.jpg') }}" alt="image" />
+                            <span>{% trans %}SONS ET HARMONIE {% endtrans %}</span>
+                        </div>
+                        <div class="classes_title">
+                            <span class="badge badge-pill badge-danger"> {% trans %}ENERGIE {% endtrans %}</span>
+                            <h4><a href="#">{% trans %}Grâce au son, retrouvez vous avec votre être intérieur.{% endtrans %}</a></h4>
+                        </div>
+                        <ul class="classes_schedule">
+                            <li><i class="ion-calendar"></i>{% trans %}Jeudi {% endtrans %}</li>
+                            <li><i class="ion-android-alarm-clock"></i>{% trans %}Sur rendez-vous {% endtrans %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div class="col-lg-4 col-sm-6">
+                <div class="classes_box classes_box_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <div class="classes_img">
+                        <img src="{{ asset('assets/images/classes_img4.jpg') }}" alt="image" />
+                        <div class="link_container">
+                            <a href="#"><i class="ion-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="classes_info">
+                         <div class="classes_teacher">
+                            <img src="{{ asset('assets/images/cl_teacher_img4.jpg') }}" alt="image" />
+                            <span>Dayna</span>
+                        </div>
+                        <div class="classes_title">
+                            <span class="badge badge-pill badge-success">vinyasa</span>
+                            <h4><a href="#">Improves Body Posture</a></h4>
+                        </div>
+                        <ul class="classes_schedule">
+                            <li><i class="ion-calendar"></i>Tue, Wed, Fri</li>
+                            <li><i class="ion-android-alarm-clock"></i>12:00 - 01:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="classes_box classes_box_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                    <div class="classes_img">
+                        <img src="{{ asset('assets/images/classes_img5.jpg') }}" alt="image" />
+                        <div class="link_container">
+                            <a href="#"><i class="ion-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="classes_info">
+                         <div class="classes_teacher">
+                            <img src="{{ asset('assets/images/cl_teacher_img1.jpg') }}" alt="image" />
+                            <span>Maria</span>
+                        </div>
+                        <div class="classes_title">
+                            <span class="badge badge-pill badge-danger">Alignment</span>
+                            <h4><a href="#">Better Energy Flow</a></h4>
+                        </div>
+                        <ul class="classes_schedule">
+                            <li><i class="ion-calendar"></i>Mon, Thu, Fri</li>
+                            <li><i class="ion-android-alarm-clock"></i>11:00 - 12:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="classes_box classes_box_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                    <div class="classes_img">
+                        <img src="{{ asset('assets/images/classes_img6.jpg') }}" alt="image" />
+                        <div class="link_container">
+                            <a href="#"><i class="ion-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="classes_info">
+                         <div class="classes_teacher">
+                            <img src="{{ asset('assets/images/cl_teacher_img2.jpg') }}" alt="image" />
+                            <span>Elena</span>
+                        </div>
+                        <div class="classes_title">
+                            <span class="badge badge-pill badge-info">Yoga Dance</span>
+                            <h4><a href="#">Increased body awareness</a></h4>
+                        </div>
+                        <ul class="classes_schedule">
+                            <li><i class="ion-calendar"></i>Mon, Thu, Fri</li>
+                            <li><i class="ion-android-alarm-clock"></i>9:00 - 11:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div> #}
+    </div>
+</section>
+<!-- END SECTION CLASSES -->
+
+<!-- START SECTION COUNTER -->
+<section class="overlay_bg_70 parallax_bg" data-parallax-bg-image="{{ asset('assets/images/b5.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="box_counter counter_white text-center">
+                    <i class="flaticon-trainers"></i>
+                    <h3 class="counter_text"><span class="counter">18</span>+</h3>
+                    <p>{% trans %}Agents {% endtrans %}</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                <div class="box_counter counter_white text-center">
+                    <i class="flaticon-trophy"></i>
+                    <h3 class="counter_text"><span class="counter">1</span>+</h3>
+                    <p>{% trans %}Super soin de qualité {% endtrans %}</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                <div class="box_counter counter_white text-center">
+                    <i class="flaticon-users"></i>
+                    <h3 class="counter_text"><span class="counter">1800</span>+</h3>
+                    <p>{% trans %}Membres satisfaits {% endtrans %}</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- END SECTION COUNTER -->
+
+
+<!-- START SECTION CALL TO ACTION -->
+<section class="overlay_bg_70 parallax_bg" data-parallax-bg-image="{{ asset('assets/images/b6.jpg') }}">
+    <div id="vib-contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-md-8 col-sm-10 text-center text_white animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s3 mb-3">
+                    <span class="pb-3 d-block"> {% trans %}Nous accompagnons toujours nos clients dans leurs besoins, plus que des clients c'est des membres de notre famille. {% endtrans %} </span>
+                    <h2>+00 000 000 000 </h2>
+                </div>
+                <p> {% trans %}Pensons au futur et passons au vert ! Si vous souhaitez plus d’information, consultez également notre charte de développement durable, ou contactez-nous.  {% endtrans %}</p>
+               
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION CALL TO ACTION -->
+
+
+<!-- START SECTION TESTIMONIAL -->
+<section class="overlay_bg_60 parallax_bg" data-parallax-bg-image="{{ asset('assets/images/b4.jpg') }}">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10 text-center text_white animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s3 text-center heading_light">
+                    <h3>{% trans %}Temoignage! {% endtrans %}</h3>
+                    <div class="title_icon"><i class="flaticon-lotus"></i></div>
+                </div>
+                <div class="xs_divider clearfix d-none d-md-block"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                <div class="testimonial_slider testimonial_section testimonial_style3 text_white carousel_slider owl-carousel owl-theme dots_white nav_transparent_white" data-margin="15" data-nav="true" data-dots="false" data-loop="true" data-autoplay="true" data-items="1"
+                    data-center="true" data-autoheight="true">
+                    <div class="testimonial_box">
+                        <div class="testi_desc">
+                            <p>{% trans %}"Tr`s satisfaits du service {% endtrans %}"</p>
+                        </div>
+                        <div class="testi_meta">
+                            <div class="testimonial_img">
+                                <img src="{{ asset('assets/images/client_img1.jpg') }}" alt="client">
+                            </div>
+                            <div class="testi_user">
+                                <h5>Merry Walter</h5>
+                                <span class="text-white">{% trans %}Ecole les marmaux {% endtrans %}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_box">
+                        <div class="testi_desc">
+                            <p>{% trans %}"Entreprise professionnelle" {% endtrans %}</p>
+                        </div>
+                        <div class="testi_meta">
+                            <div class="testimonial_img">
+                                <img src="{{ asset('assets/images/client_img2.jpg') }}" alt="client">
+                            </div>
+                            <div class="testi_user">
+                                <h5>Elena Mark</h5>
+                                <span class="text-white">Designer center Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_box">
+                        <div class="testi_desc">
+                            <p>{% trans %}C'est magnifique la façon dont ils font bien leurs travail.{% endtrans %}</p>
+                        </div>
+                        <div class="testi_meta">
+                            <div class="testimonial_img">
+                                <img src="{{ asset('assets/images/client_img3.jpg') }}" alt="client">
+                            </div>
+                            <div class="testi_user">
+                                <h5>Calvin William</h5>
+                                <span class="text-white">{% trans %}Maison de retraite {% endtrans %}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial_box">
+                        <div class="testi_desc">
+                            <p>{% trans %}je leur donne 10 étoiles {% endtrans %}</p>
+                        </div>
+                        <div class="testi_meta">
+                            <div class="testimonial_img">
+                                <img src="{{ asset('assets/images/client_img4.jpg') }}" alt="client">
+                            </div>
+                            <div class="testi_user">
+                                <h5>Maria Wolter</h5>
+                                <span class="text-white">{% trans %}Comptabilité & devis{% endtrans %}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION TESTIMONIAL -->
+{#
+<!-- START SECTION TEACHER -->
+<section class="pb_70">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10 text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                <div class="heading_s3 text-center">
+                    <h3>Notre magnifique équipe</h3>
+                    <div class="title_icon"><i class="flaticon-lotus"></i></div>
+                </div>
+                <p>Vous avez à votre disposition une équipe formée et prête à vous aider à vous sentir mieux au quotidien</p>
+                <div class="xs_divider clearfix"></div>
+            </div>
+        </div>
+        <div class="row">
+            <!--
+        	<div class="col-lg-3 col-sm-6">
+            	<div class="team_box team_style1 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                	<div class="team_img">
+                    	<img src="{{ asset('assets/images/team1.jpg') }}" alt="team1">
+                        <ul class="list_none social_icons social_style1 rounded_social">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="team_info text-center">
+                        <div class="team_title">
+                            <h5><a href="#">Elena Mark</a></h5>
+                            <span>Yoga Teacher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+            <!--
+            <div class="col-lg-3 col-sm-6">
+            	<div class="team_box team_style1 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                	<div class="team_img">
+                    	<img src="{{ asset('assets/images/team2.jpg') }}" alt="team2">
+                        <ul class="list_none social_icons social_style1 rounded_social">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team_info text-center">
+                        <div class="team_title">
+                            <h5><a href="#">Stéphane</a></h5>
+                            <span>Assistant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+            <!--
+            <div class="col-lg-3 col-sm-6">
+            	<div class="team_box team_style1 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                	<div class="team_img">
+                    	<img src="{{ asset('assets/images/team3.jpg') }}" alt="team3">
+                        <ul class="list_none social_icons social_style1 rounded_social">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team_info text-center">
+                        <div class="team_title">
+                            <h5><a href="#">Maria Redwood</a></h5>
+                            <span>Yoga Teacher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="team_box team_style1 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                    <div class="team_img">
+                        <img src="{{ asset('assets/images/team2.jpg') }}" alt="team4">
+                        <ul class="list_none social_icons social_style1 rounded_social">
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+
+                            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="team_info text-center">
+                        <div class="team_title">
+                            <h5><a href="#">Stéphane</a></h5>
+                            <span>Assistant Bien Être</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END SECTION TEACHER -->
+#}
+<!-- START SECTION NEWSLETTER -->
+<section class="bg_default">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text_white">
+                <div class="heading_s3 mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <h3>{% trans %}Abonnez vous à notre bulletin d'information. {% endtrans %}</h3>
+                </div>
+                <p class="m-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.03s">{% trans %}Nous vous enverrons des informations concernant nos nouveaux produits. {% endtrans %}</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="newsletter_form2 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+
+                    {{form_start(myform)}} {{ form_widget(myform.email,{'attr':{'class':'form-control ti-email', 'placeholder': "Entrer Votre Adresse Email",'required':'required', 'id':'email', 'title':'Subscribe'}}) }}
+
+                    <button type="submit" title="Subscribe" class="btn btn-default btn-radius" name="submit" value="Submit">{% trans %}Souscrivez{% endtrans %}</button> {{ form_end(myform) }}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION NEWSLETTER -->
+
+<!-- START SECTION BLOG -->
+<!--
+<section class="pb_70">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-xl-6 col-lg-8 col-md-10 text-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+            	<div class="heading_s3 text-center">
+                	<h3>From Our Blog & News</h3>
+                    <div class="title_icon"><i class="flaticon-lotus"></i></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur blandit magna adipiscing elit ncididunt labore et dolore magna aliqua enim. </p>
+                <div class="xs_divider clearfix"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+        	<div class="col-lg-4 col-md-6">
+            	<div class="blog_post blog_style1 box_shadow4 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                	<div class="blog_img">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/blog_small_img1.jpg') }}" alt="blog_small_img1">
+                        </a>
+                    </div>
+                    <div class="blog_content">
+                    	<h5 class="blog_title"><a href="#">Varius Phasellus blandit massa enim</a></h5>
+                        <ul class="list_none blog_meta">
+                        	<li><a href="#"><img src="{{ asset('assets/images/cl_teacher_img1.jpg') }}" alt="image"><span>Dayna</span></a></li>
+                            <li><a href="#"><i class="far fa-calendar"></i>Mar 23, 2018</a></li>
+                            <li><a href="#"><i class="far fa-comments"></i>4</a></li>
+                        </ul>
+                        <p>Phasellus blandit massa enim elit variununc Lorems ipsum consectetur industry. If you are use dolor sit enim passage of Lorem Ipsum.</p>
+                        <a href="#" class="blog_link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            	<div class="blog_post blog_style1 box_shadow4 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                	<div class="blog_img">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/blog_small_img2.jpg') }}" alt="blog_small_img2">
+                        </a>
+                    </div>
+                    <div class="blog_content">
+                    	<h5 class="blog_title"><a href="#">Varius Phasellus blandit massa enim</a></h5>
+                        <ul class="list_none blog_meta">
+                        	<li><a href="#"><img src="{{ asset('assets/images/cl_teacher_img3.jpg') }}" alt="image"><span>Dayna</span></a></li>
+                            <li><a href="#"><i class="far fa-calendar"></i>Mar 23, 2018</a></li>
+                            <li><a href="#"><i class="far fa-comments"></i>4</a></li>
+                        </ul>
+                        <p>Phasellus blandit massa enim elit variununc Lorems ipsum consectetur industry. If you are use dolor sit enim passage of Lorem Ipsum.</p>
+                        <a href="#" class="blog_link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            	<div class="blog_post blog_style1 box_shadow4 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+                	<div class="blog_img">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/blog_small_img3.jpg') }}" alt="blog_small_img3">
+                        </a>
+                    </div>
+                    <div class="blog_content">
+                    	<h5 class="blog_title"><a href="#">Varius Phasellus blandit massa enim</a></h5>
+                        <ul class="list_none blog_meta">
+                        	<li><a href="#"><img src="{{ asset('assets/images/cl_teacher_img4.jpg') }}" alt="image"><span>Dayna</span></a></li>
+                            <li><a href="#"><i class="far fa-calendar"></i>Mar 23, 2018</a></li>
+                            <li><a href="#"><i class="far fa-comments"></i>4</a></li>
+                        </ul>
+                        <p>Phasellus blandit massa enim elit variununc Lorems ipsum consectetur industry. If you are use dolor sit enim passage of Lorem Ipsum.</p>
+                        <a href="#" class="blog_link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- END SECTION BLOG -->
+
+
+{% endblock %}

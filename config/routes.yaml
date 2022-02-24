@@ -1,3 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\CleanController::index
+
 controllers:
     resource: ../src/Controller/
     type: annotation

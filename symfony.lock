@@ -128,6 +128,9 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "swiftmailer/swiftmailer": {
+        "version": "v5.4.12"
+    },
     "symfony/asset": {
         "version": "v6.0.3"
     },
@@ -230,6 +233,15 @@
             "./src/Controller/.gitignore",
             "./src/Kernel.php"
         ]
+    },
+    "symfony/google-mailer": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.4",
+            "ref": "f8fd4ddb9b477510f8f4bce2b9c054ab428c0120"
+        }
     },
     "symfony/http-client": {
         "version": "v6.0.3"
@@ -393,6 +405,9 @@
     },
     "symfony/string": {
         "version": "v6.0.3"
+    },
+    "symfony/swiftmailer-bridge": {
+        "version": "v2.8.52"
     },
     "symfony/translation": {
         "version": "6.0",

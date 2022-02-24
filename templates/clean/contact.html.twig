@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+    {% block title %}Contact{% endblock %}
+    
+
+    {% block body %}
+    <!-- START SECTION BANNER -->
+
+<!-- START SECTION BREADCRUMB -->
+<section class="breadcrumb_section page-title-light background_bg overlay_bg_blue_70" data-img-src="{{ asset('deco/assets/images/breadcrumb_bg4.jpg') }}">
+	<div class="container">
+    	<div class="row align-items-center">
+        	<div class="col-sm-12 text-center">
+            	<div class="page-title">
+            		<h1>{% trans %} Nous contacter {% endtrans %}</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="{{ path('index')}}">{% trans %}Accueil{% endtrans %}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                  </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION BREADCRUMB -->
+
+<!-- START SECTION CONTACT -->
+<section>
+	<div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+            	<div class="heading_s2">
+                	<span class="sub_heading">{% trans %}Contactez Nous{% endtrans %}</span>
+                	<h3>{% trans %}Ensemble pour un environnement propre{% endtrans %}</h3>
+                </div>
+                <p>{% trans %}Nous sommes à votre écoute pour vos retours et suggestions afin de pouvoir toujours améliorer notre service.{% endtrans %}</p>
+                <ul class="contact_info contact_info_style2 list_none">
+                    <li>
+                        <span class="ti-mobile"></span>
+                        <p>+00 00 00 00</p>
+                    </li>
+                    <li>
+                        <span class="ti-email"></span>
+                        <a href="mailto:infomavibration@gmail.com">info@wellclean.com</a>
+                    </li>
+                    <li>
+                        <span class="ti-location-pin"></span>
+                        <address>Canada nettoyage
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="col-lg-8 col-md-6 mt-4 mt-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
+                <div class="field_form icon_form">
+                    {{form_start(form)}}
+                    <div class="row">
+                                
+                       
+                                
+                        <div class="form-group col-lg-6">
+                            <div class="form-input">
+                                <span>
+                                    <i class="ti-email"></i>
+                                </span>
+                                {# {{form_label(form.email)}} #}
+                                
+                                {{ form_widget(form.email,{'attr':{'class':'form-control ti-email', 'placeholder':"Entrer votre email *",'required':'required',  'id':'email'}}) }}
+                                
+                            </div>
+                        </div>
+                    
+                                
+                        <div class="form-group col-12">
+                            <div class="form-input">
+                                <span>
+                                        <i class="ti-folder"></i>
+                                </span>
+                                    {# {{form_label(form.sujet)}} #}
+                                    
+                                    {{ form_widget(form.subject,{'attr':{'class':'form-control', 'placeholder':"Entrer le sujet *",'required':'required',  'id':'subject'}}) }}
+                
+                            </div>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <div class="form-input">
+                                <span>
+                                    <i class="ti-comments"></i>
+                                </span>
+                                {# {{form_label(form.message)}} #}
+                                    
+                                {{ form_widget(form.message,{'attr':{'class':'form-control', 'placeholder':"Message *",'required':'required',  'id':'description','rows':'5'}}) }}
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <button type="submit" title="Submit Your Message!" class="btn btn-default" name="submit" value="Submit">{% trans %}Soumettre{% endtrans %}</button>
+                        </div>
+                    </div>
+                    {{ form_end(form) }} 
+                </div>
+                        
+                            {# <div class="col-lg-12 text-center">
+                                <div id="alert-msg" class="alert-msg text-center"></div>
+                            </div> #}
+                        
+                    
+                    
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-- END SECTION CONTACT -->
+
+<!-- START SECTION MAP -->
+<div class="map_section">
+	<div class="container-fluid">
+    	<div class="row">
+        	<div class="col-12 p-0">
+                <div class="contact_map animation" data-animation="fadeInUp" data-animation-delay="0.2s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19878.407026478453!2d6.9148182344458196!3d43.551866395162634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce82d018d1298d%3A0x433d707c6a13b695!2s479%20Corniche%20des%20Primev%C3%A8res%2C%2006210%20Mandelieu-la-Napoule%2C%20France!5e0!3m2!1sfr!2stg!4v1625584937709!5m2!1sfr!2stg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SECTION MAP -->
+    {% endblock %}
+   

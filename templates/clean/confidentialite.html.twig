@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+{% block title %}Ma Vibration{% endblock %}
+
+{% block body%}
+
+<!-- START SECTION BREADCRUMB -->
+<section class="breadcrumb_section page-title-light background_bg bg_fixed overlay_bg_blue_70" data-img-src="{{ asset('deco/assets/images/breadcrumb_bg2.jpg')}}">
+	<div class="container">
+    	<div class="row align-items-center">
+        	<div class="col-sm-12 text-center">
+            	<div class="page-title">
+            		<h1>{% trans %}POLITIQUE DE CONFIDENTIALITE{% endtrans %}</h1>
+                </div>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="{{ path('index') }}">{% trans %}Accueil{% endtrans %}</a></li>
+                    <li class="breadcrumb-item"><a href="{{ path('politique') }}">{% trans %}Politique de confidentialite {% endtrans %}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{% trans %}Contenu{% endtrans %}</li>
+                  </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION BREADCRUMB -->
+
+<!-- START SECTION FAQ -->
+<section>
+	<div class="container">
+        <div class="row">
+        	<div class="col-12">
+            	<div id="accordion" class="accordion">
+                    <div class="card">
+                      <div class="card-header" id="heading-One">
+                        <h6 class="mb-0"> <a data-toggle="collapse" href="#collapse-One" aria-expanded="true" aria-controls="collapse-One">{% trans %}Qui sommes-nous ? {% endtrans %}</a> </h6>
+                      </div>
+                      <div id="collapse-One" class="collapse show" aria-labelledby="heading-One" data-parent="#accordion">
+                        <div class="card-body"> {% trans %}L’adresse de notre site Web est {% endtrans %}: <a href="https://mavibration.com">https://mavibration.com.</a>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="card">
+                      <div class="card-header" id="heading-six">
+                        <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-six" aria-expanded="false" aria-controls="heading-Four">{% trans %}Vos droits concernant les données personnelles {% endtrans %}</a> </h6>
+                      </div>
+                      <div id="collapse-six" class="collapse" aria-labelledby="heading-six" data-parent="#accordion">
+                        <div class="card-body">
+                        <p>{% trans %}Vous avez les droits suivants concernant vos données personnelles {% endtrans %} : </p>
+                        <ul>
+                            <li>
+                            {% trans %}
+                            Vous avez le droit de savoir pourquoi vos données personnelles sont nécessaires, ce qui leur arrivera et combien de temps elles seront conservées. {% endtrans %}
+                            </li>
+                            <li>{% trans %}
+                            Droit d’accès : vous avez le droit d’accéder à vos données personnelles que nous connaissons.{% endtrans %}
+                            </li>
+                            <li>
+                            {% trans %}
+                            Droit de rectification : vous avez le droit à tout moment de compléter, corriger, faire supprimer ou bloquer vos données personnelles. {% endtrans %}
+                            </li>
+                            <li> {% trans %}
+                            Si vous nous donnez votre consentement pour le traitement de vos données, vous avez le droit de révoquer ce consentement et de faire supprimer vos données personnelles.{% endtrans %}
+                            </li>
+                            <li>
+                            {% trans %}
+                            Droit de transférer vos données : vous avez le droit de demander toutes vos données personnelles au responsable du traitement et de les transférer dans leur intégralité à un autre responsable du traitement. {% endtrans %}
+                            </li>
+                            <li>
+                            {% trans %}
+                            Droit d’opposition : vous pouvez vous opposer au traitement de vos données. Nous obtempérerons, à moins que certaines raisons ne justifient ce traitement. {% endtrans %}
+                            </li>
+                            <li>
+                            {% trans %}
+                            Pour exercer ces droits, veuillez nous contacter. Veuillez vous référer aux coordonnées au bas de cette politique de cookies. Si vous avez une plainte concernant la façon dont nous traitons vos données, nous aimerions en être informés, mais vous avez également le droit de déposer une plainte auprès de l’autorité de contrôle (l’autorité chargée de la protection des données, comme le CEPD).{% endtrans %}
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-six">
+                        <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-six" aria-expanded="false" aria-controls="collapse-six"> {% trans %}Utilisation et transmission de vos données personnelles {% endtrans %}</a> </h6>
+                      </div>
+                      <div id="collapse-six" class="collapse" aria-labelledby="heading-six" data-parent="#accordion">
+                        <div class="card-body">
+                        <h6>{% trans %}Durées de stockage de vos données {% endtrans %}</h6>
+                        {% trans %}Si vous laissez un commentaire, le commentaire et ses métadonnées sont conservés indéfiniment. Cela permet de reconnaître et approuver automatiquement les commentaires suivants au lieu de les laisser dans la file de modération.
+
+                        Pour les utilisateurs et utilisatrices qui s’enregistrent sur notre site (si cela est possible), nous stockons également les données personnelles indiquées dans leur profil. Tous les utilisateurs et utilisatrices peuvent voir, modifier ou supprimer leurs informations personnelles à tout moment (à l’exception de leur nom d’utilisateur·ice). Les gestionnaires du site peuvent aussi voir et modifier ces informations.{% endtrans %}
+
+                        <h6> {% trans %}Les droits que vous avez sur vos données{% endtrans %}</h6>
+                        {% trans %}Si vous avez un compte ou si vous avez laissé des commentaires sur le site, vous pouvez demander à recevoir un fichier contenant toutes les données personnelles que nous possédons à votre sujet, incluant celles que vous nous avez fournies. Vous pouvez également demander la suppression des données personnelles vous concernant. Cela ne prend pas en compte les données stockées à des fins administratives, légales ou pour des raisons de sécurité.{% endtrans %}
+
+                        <h6> {% trans %}Transmission de vos données personnelles {% endtrans %}</h6>
+                        {% trans %}les commentaires des visiteurs peuvent être vérifiés à l’aide d’un service automatisé de détection des commentaires indésirables.{% endtrans %}
+
+                        
+
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="heading-six">
+                        <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse-six" aria-expanded="false" aria-controls="collapse-six">{% trans %}Informations supplémentaires {% endtrans %}</a> </h6>
+                      </div>
+                      <div id="collapse-six" class="collapse" aria-labelledby="heading-six" data-parent="#accordion">
+                        <div class="card-body">
+                            <h6>{% trans %}Comment nous protégeons vos données {% endtrans %}</h6>
+                            {% trans %}Vos données sont stockées sur un serveur protégé en France chez IONOS. Les accès à ce serveur sont protégés par mot de passe sécurisé aléatoire et complexe. Seuls les propriétaire du site MA Vibration, M. STEPHANE CHAMOURET et le webmaster Kamul ont accès à ces données. Des plugins sont utilisés pour sécuriser le site et des lignes de code sont insérées dans certains fichiers clés du site afin de bloquer toute tentative d’intrusion. {% endtrans %}
+
+                        <h6>{% trans %}Procédures mises en œuvre en cas de fuite de données {% endtrans %} </h6>
+                        {% trans %}En cas de fuite de données, un mail vous sera envoyé afin de vous prévenir. Nous sauvegardons tous les jours les données de quantaform.com et conservons donc une copie de vos données pour vous prévenir en cas de fuite.{% endtrans %}
+
+                        <h6>{% trans %}Opérations de marketing automatisé et/ou de profilage réalisées à l’aide des données personnelles {% endtrans %} </h6>
+                        {% trans %}Seule, la newsletter peut être utilisée pour vous prévenir des actualités du site.   {% endtrans %}              
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SECTION FAQ -->
+{%endblock%}
