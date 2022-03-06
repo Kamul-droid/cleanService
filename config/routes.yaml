@@ -1,6 +1,9 @@
 index:
     path: /
     controller: App\Controller\CleanController::index
+off:
+    path: /off
+    controller: App\Controller\CleanController::off
 about:
     path: /about
     controller: App\Controller\CleanController::about

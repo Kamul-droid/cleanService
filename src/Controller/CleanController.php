@@ -52,6 +52,14 @@ class CleanController extends AbstractController
     }
 
     /**
+     * @Route("/off", name="off")
+     */
+    public function off()
+    {
+        return $this->render('clean/Offindex.html.twig', []);
+    }
+
+    /**
      * @Route("/contact",name="contact")
      */
     public function contact( Request $request,ObjectManager $manager, MailerInterface $mailer)
